@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Music Player</title>
+  <link rel="shortcut icon" href="./images/icons/musical.png" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="top-bar">
+      <span>Now Playing</span>
+      <img src="./images/icons/music.png" class="material-icons" id="more-music">
+    </div>
+    <div class="img-area">
+      <img src="" alt="">
+    </div>
+    <div class="song-details">
+      <p class="name"></p>
+      <p class="artist"></p>
+    </div>
+    <div class="progress-area">
+      <div class="progress-bar">
+        <audio id="main-audio" src=""></audio>
+      </div>
+      <div class="song-timer">
+        <span class="current-time">0:00</span>
+        <span class="max-duration">0:00</span>
+      </div>
+
+    </div>
+    <div class="controls">
+      <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+      
+      
+      <img src="./images/icons/skip.png" id="prev" class="material-icons">
+      <div class="play-pause">
+        <i class="material-icons play">play_arrow</i>
+      </div>
+      <img src="./images/icons/end.png" id="next" class="material-icons">
+      <img id="heart" class="material-icons" src="./images/icons/heart.png">
+    </div>
+    <div class="music-list">
+      <div class="header">
+        <div class="row">
+          <img src="./images/icons/music.png" class= "list material-icons">
+          <span>Music list</span>
+        </div>
+        <img src="./images/icons/close.png"  id="close" class="material-icons">
+      </div>
+      <ul>
+      </ul>
+    </div>
+  </div>
+
+  <script src="js/music-list.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
